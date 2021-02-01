@@ -1,4 +1,6 @@
-package classOne;
+package classtwo;
+
+import classOne.Course;
 
 public class Main {
 

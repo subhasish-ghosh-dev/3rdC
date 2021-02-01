@@ -1,6 +1,6 @@
 package classOne;
 
-public class Course extends Student {
+public class Course {
 	
 	
 	public Course(){
@@ -8,8 +8,7 @@ public class Course extends Student {
 	}
 	
 	
-	
-	private void display(){
+	protected void display(){
 		Student st = new Student();
 		st.name="bijoy";
 		System.out.println(st.name);
