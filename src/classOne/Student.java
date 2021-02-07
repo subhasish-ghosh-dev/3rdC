@@ -19,7 +19,7 @@ public class Student extends Course{
 	
 	public Student(){
 		//super.display();
-		System.out.println("CALLED FROM MAIN : Student Class"+super.rollNo);
+		//System.out.println("CALLED FROM MAIN : Student Class"+super.rollNo);
 	}
 	
 

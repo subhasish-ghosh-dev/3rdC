@@ -5,21 +5,17 @@ import classOne.Student;
 
 public class Main extends Student {
 
-	public void display1(){
-		//super.setSemester("2nd");
-		//System.out.println(super.getSemester());
-		super.rollNo="";
-	}
-	
+	public void display(){
+		super.setSemester("2nd");		
+		super.rollNo="19320021";
+		super.name="Minhaj";		
+	}	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub			
 		Main st = new Main();
-		//Student st1 = new Student();
 		st.display();
-		
-		Main.display1();
-		
+		System.out.println(st.name +"  "+st.rollNo+ "   " +st.getSemester());
 	}
 
 }
