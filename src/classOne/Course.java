@@ -1,10 +1,11 @@
 package classOne;
 
-public class Course {
+public class Course  {
 	
+	 String rollNo="1092321";
 	
 	public Course(){
-		
+		System.out.println("CALLED FROM MAIN: Course Class");
 	}
 	
 	
