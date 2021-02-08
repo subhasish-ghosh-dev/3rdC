@@ -16,6 +16,11 @@ public class Main extends Student {
 		Main st = new Main();
 		st.display();
 		System.out.println(st.name +"  "+st.rollNo+ "   " +st.getSemester());
+		if(st instanceof Student){
+			System.out.println("Student object");
+		}
+		else{
+			System.out.println("Not Student object");
+		}
 	}
-
 }
