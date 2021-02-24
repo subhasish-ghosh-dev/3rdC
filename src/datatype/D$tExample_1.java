@@ -3,7 +3,7 @@ package datatype;
 import java.util.ArrayList;
 import java.util.List;
 
-public class D$tExample_1 {
+public final class D$tExample_1 {
 	//primitive data types
 	//instance variable
 	//Identifier rule (class name, variable name, method name) :  first character alphabetic letter, alphaneumeric letter _ , no space, u can use $ after your first character
@@ -18,10 +18,14 @@ public class D$tExample_1 {
 	double d;//64 bit double precision    decimal values up to 16 digits of precision 0.123456789012345
 	
 	//class type or wrapper type
-	String txt;
+	String txt="welcome to java programming. You are doing great at programming.";
+	String txt2 = "welcome to java programming. You are doing great at programming.";
 	
+		
 	Integer i2 = new Integer(9);
 	Integer j2 = new Integer(9);
+	
+
 	
 	String st1 = new String("welcome");
 	String st2 = new String("welcome");
@@ -48,7 +52,9 @@ public class D$tExample_1 {
 	}*/
 	//constructor overloading
 	public D$tExample_1(boolean f, float j, byte k){
-		
+		txt2 = "WELCOME TO STRING";
+		i2=10;
+		j2=10;
 		Guardian g = new Guardian();
 		Object g2 = new Guardian2();
 		g.print();
@@ -67,17 +73,17 @@ public class D$tExample_1 {
 		String t = "main";
 		//txt =t;
 		boolean strRes = txt==t;  
-		System.out.println("is equal "+strRes);
+		System.out.println("strres value is equal "+strRes);
 		
 		
 		
-		/*
+		
 		boolean intRes = i2==j2;  
-		System.out.println("is equal "+intRes);
-		*/
+		System.out.println("interes is equal "+intRes);
+		
 		
 		boolean newStrRes = st1==st2;  
-		System.out.println("is equal "+newStrRes);
+		System.out.println("st1 is equal to st2 is equal "+newStrRes);
 		
 		System.out.println("is equal "+st1.equals(st2));
 		boolean insRes= false;
