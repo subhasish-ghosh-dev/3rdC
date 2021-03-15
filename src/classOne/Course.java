@@ -2,10 +2,18 @@ package classOne;
 
 public class Course  {
 	
-	protected String rollNo="1092321";
-	
+	protected String name;
+	protected String description;
+	protected String code;
+	protected String rollNo="123445";
 	public Course(){
 		//System.out.println("CALLED FROM MAIN: Course Class");
+	}
+	
+	public Course(String n, String d, String c){
+		this.name = n;
+		this.description = d;
+		this.code = c;
 	}
 	
 	

@@ -1,17 +1,20 @@
 package switchstndenum;
 
 import java.util.TimeZone;
+
+import classOne.Student;
+
 import java.util.*;
 import java.text.*;
 
-public class SwitchEx {
+public class SwitchEx implements ITimeCalculator {
 	
 	
 	private /*static*/  void switchOnIntegers(byte size) {
 		System.out.println(size);
 		  switch(size) {
 
-		    case 0  : { System.out.println("size is small");    }
+		    case 0  : { System.out.println("size is small");  break;  }
 		    case 1  : { System.out.println("size is medium");   }
 		    case 2  : { System.out.println("size is large");    }
 		    case 3  : { System.out.println("size is X-large"); break; }
@@ -50,11 +53,11 @@ public class SwitchEx {
 	
 	private void adjustClock(String tz){
 		
-		//String[] ids = TimeZone.getAvailableIDs();
+		String[] ids = TimeZone.getAvailableIDs();
 		
-		/*for(String t : ids){
+		for(String t : ids){
 			System.out.println(t);
-		}*/
+		}
 		SimpleDateFormat  sdf=new SimpleDateFormat("hh:mm:ss a");
 		
 		switch(tz){
@@ -94,6 +97,19 @@ public class SwitchEx {
 		SwitchEx s1 = new SwitchEx();
 		s1.adjustClock("EST");
 		
+		//type casting example
+		ITimeCalculator swtch = new SwitchEx();
+		ITimeCalculator student = new Student();
+		
+		swtch.calculate();
+		student.calculate();
+	}
+
+
+	@Override
+	public void calculate() {
+		// TODO Auto-generated method stub
+		System.out.println("I calculate time");
 	}
 
 }
