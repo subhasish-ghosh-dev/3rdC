@@ -6,7 +6,7 @@ public class Ex02 {
 		// TODO Auto-generated method stub
 		Library emp = new Library();
 		emp.input();
-		emp.compute(3);
+		emp.compute();
 		emp.display();
 	}
 
