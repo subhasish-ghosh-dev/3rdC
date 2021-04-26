@@ -7,8 +7,11 @@ import classOne.Student;
 import java.util.*;
 import java.text.*;
 
-public class SwitchEx implements ITimeCalculator {
+public class SwitchEx extends Car implements ITimeCalculator, IMyInterface  {
 	
+	public SwitchEx(){
+		super();
+	}
 	
 	private /*static*/  void switchOnIntegers(byte size) {
 		System.out.println(size);
@@ -101,6 +104,16 @@ public class SwitchEx implements ITimeCalculator {
 		ITimeCalculator swtch = new SwitchEx();
 		ITimeCalculator student = new Student();
 		
+		IMyInterface im = new IMyInterface(){
+
+			@Override
+			public void request() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		};
+		
 		swtch.calculate();
 		student.calculate();
 	}
@@ -111,5 +124,21 @@ public class SwitchEx implements ITimeCalculator {
 		// TODO Auto-generated method stub
 		System.out.println("I calculate time");
 	}
+
+
+	@Override
+	public void request() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	protected void drive() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 
 }
